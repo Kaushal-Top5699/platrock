@@ -84,5 +84,3 @@ JSON files serve as the data layer for the MVP (vendors, inventory, property his
 System designed in consultation with Starcore Capital (DFW real estate), whose property management team confirmed the core pain points: maintenance noise, vendor qualification, and compliance overhead.
 
 ---
-
-*Built in ~12 hours of focused development. All agent reasoning is visible in the UI — expand any "Reasoning" section to see how each decision was made.*
