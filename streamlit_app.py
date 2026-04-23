@@ -4,6 +4,13 @@ from src.orchestrator import run_workflow
 
 st.set_page_config(page_title="PlatRock", layout="wide", page_icon="🪨")
 
+if "clarification_needed" not in st.session_state:
+    st.session_state["clarification_needed"] = False
+if "clarification_question" not in st.session_state:
+    st.session_state["clarification_question"] = None
+if "original_message" not in st.session_state:
+    st.session_state["original_message"] = None
+
 # ---------------------------------------------------------------------------
 # Layout
 # ---------------------------------------------------------------------------
@@ -42,7 +49,38 @@ with left:
                 except Exception as exc:
                     st.session_state["error"] = str(exc)
 
+            if st.session_state.get("result") and st.session_state["result"].final_status == "NEEDS_CLARIFICATION":
+                st.session_state["clarification_needed"] = True
+                st.session_state["clarification_question"] = st.session_state["result"].intake.clarifying_question
+                st.session_state["original_message"] = raw_message
+                st.session_state["original_unit_id"] = unit_id
+                st.session_state["original_tenant_name"] = tenant_name
+
     st.info("Demo: Pre-filled with Maria Rodriguez / Unit C-204 / AC issue")
+
+    if st.session_state.get("clarification_needed"):
+        st.divider()
+        st.warning(f"💬 **Agent asks:** {st.session_state['clarification_question']}")
+        clarification_answer = st.text_area("Your answer:", height=80, key="clarification_input")
+        if st.button("📨 Submit Clarification", type="primary", use_container_width=True):
+            if clarification_answer.strip():
+                combined = (st.session_state["original_message"] +
+                            " [Tenant clarification: " + clarification_answer.strip() + "]")
+                with st.spinner("Re-running with your clarification..."):
+                    try:
+                        result = run_workflow(
+                            st.session_state["original_unit_id"],
+                            st.session_state["original_tenant_name"],
+                            combined,
+                        )
+                        st.session_state["result"] = result
+                        st.session_state["clarification_needed"] = False
+                        st.session_state["clarification_question"] = None
+                    except Exception as e:
+                        st.session_state["error"] = str(e)
+                        st.session_state["clarification_needed"] = False
+            else:
+                st.warning("Please type an answer before submitting.")
 
 # ---------------------------------------------------------------------------
 # Right panel — Results
