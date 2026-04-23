@@ -1,0 +1,87 @@
+{
+  "vendors": [
+    {
+      "id": "V001",
+      "name": "Carlos M.",
+      "company": "CoolAir Pro Services",
+      "skills": ["HVAC", "refrigerant_handling", "electrical_low_voltage"],
+      "certifications": ["EPA-608", "NATE-HVAC"],
+      "rating": 4.8,
+      "reviews_count": 134,
+      "preferred_language": "es",
+      "service_area": "DFW-North",
+      "hourly_rate_usd": 95,
+      "availability_windows": [
+        { "day": "today", "start": "14:00", "end": "16:00" },
+        { "day": "tomorrow", "start": "09:00", "end": "12:00" }
+      ],
+      "active": true
+    },
+    {
+      "id": "V002",
+      "name": "Dana K.",
+      "company": "FlowRight Plumbing",
+      "skills": ["plumbing", "water_heater", "drain_cleaning"],
+      "certifications": ["TX-Master-Plumber"],
+      "rating": 4.5,
+      "reviews_count": 89,
+      "preferred_language": "en",
+      "service_area": "DFW-North",
+      "hourly_rate_usd": 85,
+      "availability_windows": [
+        { "day": "today", "start": "08:00", "end": "12:00" },
+        { "day": "today", "start": "13:00", "end": "17:00" }
+      ],
+      "active": true
+    },
+    {
+      "id": "V003",
+      "name": "James T.",
+      "company": "Volt Solutions Electric",
+      "skills": ["electrical", "panel_upgrade", "outlet_repair", "lighting"],
+      "certifications": ["TX-Master-Electrician", "OSHA-10"],
+      "rating": 4.7,
+      "reviews_count": 211,
+      "preferred_language": "en",
+      "service_area": "DFW-Metro",
+      "hourly_rate_usd": 110,
+      "availability_windows": [
+        { "day": "tomorrow", "start": "10:00", "end": "15:00" }
+      ],
+      "active": true
+    },
+    {
+      "id": "V004",
+      "name": "Priya N.",
+      "company": "AllFix Property Services",
+      "skills": ["general_maintenance", "drywall", "painting", "carpentry", "appliance_repair"],
+      "certifications": ["EPA-RRP"],
+      "rating": 4.3,
+      "reviews_count": 57,
+      "preferred_language": "en",
+      "service_area": "DFW-North",
+      "hourly_rate_usd": 65,
+      "availability_windows": [
+        { "day": "today", "start": "10:00", "end": "18:00" },
+        { "day": "tomorrow", "start": "08:00", "end": "18:00" }
+      ],
+      "active": true
+    },
+    {
+      "id": "V005",
+      "name": "Miguel R.",
+      "company": "AquaShield Waterproofing",
+      "skills": ["waterproofing", "plumbing", "leak_detection"],
+      "certifications": ["TX-Journeyman-Plumber"],
+      "rating": 4.6,
+      "reviews_count": 43,
+      "preferred_language": "es",
+      "service_area": "DFW-South",
+      "hourly_rate_usd": 80,
+      "availability_windows": [
+        { "day": "tomorrow", "start": "13:00", "end": "17:00" }
+      ],
+      "active": true
+    }
+  ]
+}

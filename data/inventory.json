@@ -1,0 +1,76 @@
+{
+  "inventory": [
+    {
+      "part_id": "P001",
+      "name": "Refrigerant R410A (25 lb cylinder)",
+      "category": "HVAC",
+      "quantity": 4,
+      "unit": "cylinder",
+      "reorder_threshold": 2,
+      "unit_cost_usd": 75.00
+    },
+    {
+      "part_id": "P002",
+      "name": "Compressor Start Capacitor (45/5 MFD)",
+      "category": "HVAC",
+      "quantity": 6,
+      "unit": "each",
+      "reorder_threshold": 3,
+      "unit_cost_usd": 22.50
+    },
+    {
+      "part_id": "P003",
+      "name": "HVAC Air Filter 16x25x1 MERV-8",
+      "category": "HVAC",
+      "quantity": 24,
+      "unit": "each",
+      "reorder_threshold": 10,
+      "unit_cost_usd": 8.00
+    },
+    {
+      "part_id": "P004",
+      "name": "Garbage Disposal Unit 1/2 HP",
+      "category": "Plumbing",
+      "quantity": 2,
+      "unit": "each",
+      "reorder_threshold": 1,
+      "unit_cost_usd": 89.00
+    },
+    {
+      "part_id": "P005",
+      "name": "Water Heater Anode Rod (Magnesium)",
+      "category": "Plumbing",
+      "quantity": 8,
+      "unit": "each",
+      "reorder_threshold": 3,
+      "unit_cost_usd": 18.00
+    },
+    {
+      "part_id": "P006",
+      "name": "GFCI Outlet 15A (White)",
+      "category": "Electrical",
+      "quantity": 15,
+      "unit": "each",
+      "reorder_threshold": 5,
+      "unit_cost_usd": 14.00
+    },
+    {
+      "part_id": "P007",
+      "name": "Door Lockset Deadbolt (Keyed)",
+      "category": "Hardware",
+      "quantity": 5,
+      "unit": "each",
+      "reorder_threshold": 2,
+      "unit_cost_usd": 42.00
+    },
+    {
+      "part_id": "P008",
+      "name": "Thermostat (Programmable, 24V)",
+      "category": "HVAC",
+      "quantity": 3,
+      "unit": "each",
+      "reorder_threshold": 2,
+      "unit_cost_usd": 55.00
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "property_history": [
+    {
+      "unit": "C-204",
+      "tenant_ref": "T-8821",
+      "records": [
+        {
+          "ticket_id": "TKT-2024-0091",
+          "date": "2025-10-15",
+          "category": "HVAC",
+          "issue": "Routine HVAC maintenance — air filter replacement and coil cleaning",
+          "urgency": "LOW",
+          "vendor_id": "V001",
+          "resolution": "Filter replaced (16x25x1 MERV-8). Coils cleaned. System operating normally. Refrigerant level checked — within spec.",
+          "cost_usd": 120.00,
+          "parts_used": ["P003"],
+          "closed": true
+        },
+        {
+          "ticket_id": "TKT-2024-0047",
+          "date": "2025-07-03",
+          "category": "Plumbing",
+          "issue": "Kitchen faucet dripping constantly",
+          "urgency": "LOW",
+          "vendor_id": "V002",
+          "resolution": "Replaced worn cartridge. No further issues reported.",
+          "cost_usd": 95.00,
+          "parts_used": [],
+          "closed": true
+        }
+      ]
+    },
+    {
+      "unit": "A-101",
+      "tenant_ref": "T-7703",
+      "records": [
+        {
+          "ticket_id": "TKT-2025-0012",
+          "date": "2026-01-18",
+          "category": "Electrical",
+          "issue": "Bathroom GFCI outlet tripping repeatedly",
+          "urgency": "MODERATE",
+          "vendor_id": "V003",
+          "resolution": "Old GFCI outlet replaced. Wiring in bathroom circuit inspected — no faults found.",
+          "cost_usd": 145.00,
+          "parts_used": ["P006"],
+          "closed": true
+        },
+        {
+          "ticket_id": "TKT-2025-0031",
+          "date": "2026-03-05",
+          "category": "General",
+          "issue": "Front door lock difficult to turn, key sometimes gets stuck",
+          "urgency": "LOW",
+          "vendor_id": "V004",
+          "resolution": "Deadbolt replaced. New keys cut and provided to tenant.",
+          "cost_usd": 87.00,
+          "parts_used": ["P007"],
+          "closed": true
+        }
+      ]
+    },
+    {
+      "unit": "B-312",
+      "tenant_ref": "T-9145",
+      "records": [
+        {
+          "ticket_id": "TKT-2025-0044",
+          "date": "2026-02-22",
+          "category": "Plumbing",
+          "issue": "Water heater producing lukewarm water only",
+          "urgency": "HIGH",
+          "vendor_id": "V002",
+          "resolution": "Anode rod corroded — replaced. Thermostat recalibrated to 120°F. Hot water restored same day.",
+          "cost_usd": 180.00,
+          "parts_used": ["P005"],
+          "closed": true
+        }
+      ]
+    }
+  ]
+}

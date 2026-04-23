@@ -1,0 +1,39 @@
+{
+  "compliance_rules": [
+    {
+      "rule_id": "CR-001",
+      "name": "cost_approval_threshold",
+      "description": "Any dispatch with an estimated total cost above this amount requires property manager approval before the work order is issued.",
+      "threshold_usd": 500,
+      "action_if_violated": "BLOCK_AND_ESCALATE"
+    },
+    {
+      "rule_id": "CR-002",
+      "name": "vendor_must_be_certified",
+      "description": "The assigned vendor must hold at least one active certification relevant to the job category. Uncertified vendors may not be dispatched.",
+      "enabled": true,
+      "action_if_violated": "VETO"
+    },
+    {
+      "rule_id": "CR-003",
+      "name": "fair_housing_check",
+      "description": "The dispatch recommendation must not contain language, scheduling decisions, or vendor selection that could constitute differential treatment by protected class. Compliance Auditor must confirm before approval.",
+      "enabled": true,
+      "action_if_violated": "VETO"
+    },
+    {
+      "rule_id": "CR-004",
+      "name": "audit_trail_required",
+      "description": "Every ticket must have a complete audit trail — intake, triage, inventory check, dispatch proposal, and compliance review — before the manager approval card is shown. Incomplete traces are blocked.",
+      "enabled": true,
+      "action_if_violated": "VETO"
+    },
+    {
+      "rule_id": "CR-005",
+      "name": "emergency_response_sla",
+      "description": "Tickets classified as EMERGENCY urgency must have a vendor availability window within 2 hours of ticket creation. If no vendor is available within SLA, Orchestrator must notify property manager immediately.",
+      "sla_hours": 2,
+      "action_if_violated": "ESCALATE_IMMEDIATELY"
+    }
+  ]
+}

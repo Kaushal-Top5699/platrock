@@ -1,0 +1,7 @@
+anthropic
+langgraph
+langchain-anthropic
+streamlit
+pydantic>=2.0
+python-dotenv
+pytest
